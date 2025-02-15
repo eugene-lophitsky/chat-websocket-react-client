@@ -1,0 +1,11 @@
+.message-body {
+    width: 65%;
+    padding: 15px 0;
+    background-color: #37aee2;
+    border-radius: 5px;
+    margin: 20px 10px 20px 20px;
+}
+
+.message-content {
+    padding: 5px 6px;
+}

@@ -15,15 +15,11 @@ a {
     flex: 1;
 }
 
-.chatwindow-avatar {
-    display: inline-flex;
+.chatwindow-avatar-main {
+    display: flex;
     justify-content: center;
-    align-items: center;
-}
-
-.chatwindow-avatar img {
-    max-width: 100px;
-    aspect-ratio: 1;
+    border-radius: 100%;
+    margin-inline: auto;
 }
 
 .chatwindow-nickname {
@@ -67,7 +63,7 @@ a {
 }
 
 .userlist-items {
-    height: 50vh;
+    height: 60vh;
     overflow-y: scroll;
     margin: 1px 0 0 0;
 }
@@ -98,7 +94,6 @@ a {
 }
 
 .chatwindow-main-header {
-    /*width: 100%;*/
     display: flex;
     font-size: 20px;
     font-weight: bold;
@@ -108,7 +103,7 @@ a {
 }
 
 .chatwindow-main-message-tree {
-    height: 68vh;
+    height: 73vh;
     overflow-y: scroll;
     border: 1px solid #afa6a6;
 }
@@ -126,6 +121,8 @@ a {
 
 .chatwindow-send-button {
     height: 60px;
+    display: flex;
+    align-items: center;
     background-color: #37aee2;
     border-radius: 0 0 5px 0;
 }
@@ -141,4 +138,8 @@ a {
     width: 100%;
     resize: none;
     border-radius: 0 0 0 5px;
+}
+
+.input-text-area::placeholder {
+  font-style: italic;
 }
